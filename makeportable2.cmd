@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-for /F "tokens=1,2*" %%i in ('reg query HKLM\Software\7-Zip /v Path') do (
+for /F "tokens=1,2*" %%i in ('reg query HKLM\Software\7-Zip-Zstandard /v Path') do (
     set "PATH=%%k;%PATH%"
 )
 
